@@ -23,8 +23,8 @@ const Sec1Home = () => {
                 </div>
                   <p className='biography'>Biography : {val.biography}</p>
                 <div className='author-btns'>
-                  <button className='author-btn' onClick={val.onClickEdit}>Edit</button>
-                  <button className='author-btn' onClick={val.onClickDelete}>Delete</button>
+                  <button className='author-btn' onClick={val.onClickEdit}>Edit Author</button>
+                  <button className='author-btn' onClick={val.onClickDelete}>Delete Author</button>
                 </div>
                 <div className='list-of-cards'>
                   {book[val.name]&&
