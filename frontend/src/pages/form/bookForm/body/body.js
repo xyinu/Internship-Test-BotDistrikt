@@ -7,7 +7,6 @@ const FormPart1 = ({ bookIndex, title, publisher, year,currentAuthor,authors }) 
   const [publisherState,setPublisherState]=useState(publisher)
   const [yearState,setYearState]=useState(year)
   const [authorState,setAuthorState]=useState(currentAuthor)
-  console.log(title)
 
   return (
     <body className="part-1">

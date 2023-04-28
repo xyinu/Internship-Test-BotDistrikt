@@ -11,11 +11,10 @@ export class BookController {
         return await this.bookService.getAllByAuthor(author)
     }
 
-    @Post('')
+    @Post()
     async createbook(
         @Body(){title,publisher,year,author}:BookDto
     ){
-        console.log(title,publisher,year,author)
         return await this.bookService.create(title,publisher,year,author)
     }
 
@@ -31,7 +30,6 @@ export class BookController {
         @Body(){title,publisher,year,author}:BookDto,
         @Param('id') id:number
     ){
-        console.log(title,publisher,year,author)
         await this.bookService.update(id,title,publisher,year,author)
     }
     

@@ -30,8 +30,8 @@ export const useHomePageBody = () =>{
                                 authorIndex:author.id
                             }
                         }),
-                        onClickDelete:()=>{
-                            axios.delete(`http://localhost:4000/author/${author.id}`)
+                        onClickDelete:async ()=>{
+                            await axios.delete(`http://localhost:4000/author/${author.id}`)
                             setDeleted((prev)=>!prev)
                         }
                     }
@@ -55,8 +55,8 @@ export const useHomePageBody = () =>{
                                             currentAuthor:book.authorId,
                                             authors:res.data
                                         }}),
-                                    onClickDelete:()=>{
-                                        axios.delete(`http://localhost:4000/book/${book.id}`)
+                                    onClickDelete:async ()=>{
+                                        await axios.delete(`http://localhost:4000/book/${book.id}`)
                                         setDeleted((prev)=>!prev)
                                     }
                                 }
@@ -69,7 +69,7 @@ export const useHomePageBody = () =>{
                 })
             })
     },[deleted])
-    
+
     return {
         author,
         book

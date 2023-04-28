@@ -3,14 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 export const useAuthorForm = () =>{
     const navigate = useNavigate();
-    const handleSubmit = ({id,name,biography}) =>
+    const handleSubmit = async ({id,name,biography}) =>
     {
-        console.log(id,"test")
         if(id){
-            axios.put(`http://localhost:4000/author/${id}`,{name,biography})
+            await axios.put(`http://localhost:4000/author/${id}`,{name,biography})
             navigate('/')
         }else{
-            axios.post('http://localhost:4000/author',{name,biography})
+            await axios.post('http://localhost:4000/author',{name,biography})
             navigate('/')
         }
     }
