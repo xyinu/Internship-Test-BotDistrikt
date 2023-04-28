@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import { useBookFormBody } from './bookFormHelper';
 
 const FormPart1 = ({ bookIndex, title, publisher, year,currentAuthor,authors }) => {

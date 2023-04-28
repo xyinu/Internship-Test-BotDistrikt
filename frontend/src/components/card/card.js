@@ -1,6 +1,5 @@
 import './card.css';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 const Cards = ({title,publisher,year,onClickDelete,onClickEdit}) => {
     return (

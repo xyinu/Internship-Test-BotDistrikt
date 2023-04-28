@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import upload from '../../../../images/upload.png'
+import { useState } from 'react';
 import { useAuthorForm } from './authorFormHelper';
 
 const FormPart1 = ({authorIndex,name,biography}) => {

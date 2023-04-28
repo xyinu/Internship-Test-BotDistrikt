@@ -80,7 +80,9 @@ p{
 
 .biography{
   font-size: 20px;
-  width:80%
+  width:80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .list-of-cards {
